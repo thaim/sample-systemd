@@ -1,0 +1,10 @@
+[Unit]
+Description = Dependency test3
+After = dependency-test2
+
+[Service]
+Type = simple
+ExecStart = /usr/local/bin/dependency-test3.sh
+
+[Install]
+WantedBy = multi-user.target
